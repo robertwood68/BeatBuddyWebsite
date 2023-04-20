@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
         <!-- image in the tab -->
-        <link rel="icon" type="image/x-icon" href="/images/logo.png">
+        <link rel="icon" type="image/x-icon" href="../images/BB.png">
         <!-- title of the page-->
         <title>Error</title>
         <!-- local CSS stylesheet-->
@@ -24,41 +24,43 @@
         </svg>
 
         <!-- body content for the index page -->
-        <nav class="navbar navbar-expand-lg sticky-top navbar-dark" style="padding: .5%;">
+        <!-- body content for the index page -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="/" style="color:white; font-weight: bold; font-size: 22px; margin-left: 1.2%; margin-top: .2%; margin-bottom: .2%;">
+                    <img src="../images/BB.png" alt="Logo" width="36" height="30" class="d-inline-block align-text-top">
+                    BeatBuddy
+                </a>
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: black;">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/about.html">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/experience.html">Experience</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/contact.html">Contact</a>
+                            <a class="nav-link" aria-current="page" href="/commands.html">Commands</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Projects
+                            Donate
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li>
-                                    <a class="dropdown-item" href="/BeatBuddy.html" style="color: rgb(0,30,106); font-size: 18px;">
-                                        BeatBuddy - Discord Music Bot
+                                    <a class="dropdown-item" target="_blank" rel="noopener noreferrer" href="https://cash.app/$Robwoodd" style="color: rgb(0,30,106); font-size: 18px;">
+                                        CashApp
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="/PCOMM_Application.html" style="color: rgb(0,30,106); font-size: 18px;">
-                                        Personalized Commencement Application
+                                    <a class="dropdown-item" target="_blank" rel="noopener noreferrer" href="https://venmo.com/u/Robwoodd" style="color: rgb(0,30,106); font-size: 18px;">
+                                        Venmo
                                     </a>
                                 </li>
                             </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://discord.com/oauth2/authorize?client_id=931667415912296478&permissions=8&scope=bot">Invite</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://robertwood.dev/contact.html">Support</a>
                         </li>
                     </ul>
                 </div>
@@ -70,10 +72,13 @@
             <div id="alert" class="alert alert-danger d-flex align-items-center" role="alert">
                 <h3 id="alertH3"><svg id="alertIcons" class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg> Error 404: Page Not Found! <svg id="alertIcons" class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg></h3>
             </div>
-            <p><img src="/images/wheezer.png"></p>
-            <h5 id="h5">You look as lost as Carl Wheezer trying to find his croissant.<br><br>Click the button below to get back on track.</h5>
+            <h5 id="h5">
+                Looks like you've taken a wrong turn...
+                <br><br>
+                Hit the button below to return to the main page!
+            </h5>
             <br>
-            <button type="button" class="btn btn-outline-primary" onclick="window.location='/'">Go Home</button>
+            <button type="button" class="btn btn-outline-secondary" onclick="window.location='/'">Go Home</button>
         </div>
     </body>
 </html>

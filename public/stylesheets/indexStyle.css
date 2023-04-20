@@ -1,316 +1,765 @@
+
+/* Desktop View */
 @media  only screen and (min-width : 768px) {
   body {
     background-color: rgb(8, 8, 8) !important;
+    padding-top: 5% !important;
   }
+
+  /* Navbar adjustments */
   nav {
     background-color: rgb(95, 0, 87) !important;
   }
   .navbar-nav {
-    float:none !important;
-    margin:0 auto !important;
     display: flex !important;
-    text-align: center !important;
+    float: none !important;
+    margin: 0 !important;
   }
   .navbar-nav > li {
     display: inline-block;
     float: none;
   }
-  nav ul li ul li {
-    background-color: rgb(255, 255, 255) !important;
-    
+  nav ul li a {
+    color: rgb(255, 255, 255) !important;
+  }
+  .custom-toggler.navbar-toggler {
+    border-color: rgb(95, 0, 87) !important;
+    background-color: white !important;
+  }
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url(
+    "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(95, 0, 87, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+  }
+  .dropdown-menu {
+    background-color: rgb(95, 0, 87) !important;
   }
   a {
     color: #00B7FF;
     font-size: 18px;
   }
+
+  /* First div containing logo for beatbuddy */
   #top {
     width: 50%; 
     margin: auto; 
     margin-top: 2%;
-    border-bottom: 3px solid rgb(95, 0, 87);
   } 
-  #top h1 {
-    -webkit-text-fill-color: rgb(95, 0, 87);
-    text-align: center
+  #top img {
+    text-align: center;
+    margin: auto;
+    margin-left: 40%;
+    width: 20%;
   }
+
+  /* Second div containing information about beatbuddy */
   #intro {
-    width: 90%; 
+    width: 100%; 
     margin: auto; 
     margin-top: 2%;
-    border-radius: 20px 20px 20px 20px;
-    background-color: rgb(213, 213, 213);
-    padding: 5%;
+    padding: 0%;
     padding-top: 2%;
     padding-bottom: 2%;
     overflow-wrap: break-word;
   }
-  #intro p {
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+  #commandsIntro {
+    width: 75%;
+    margin: 0 12.5%;
+    padding: 3%;
+    background-color: rgb(95, 0, 87);
+    border-radius: 15px 15px;
   }
-  #cardHolder {
-    display: flex;
-    width: 100%;
-    height: 350px !important;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+  .paraDiv {
+    width: 75%;
+    margin: 2% 12.5% 0 12.5%;
   }
-  #cards {
-    background-color: rgb(95, 0, 87) !important;
-    display: inline-block !important;
-    max-width: 16rem !important;
-    min-width: 10rem !important;
-    height: inherit !important;
-    margin: auto !important;
+  #commandsIntro p {
+    color: white !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    letter-spacing: normal !important;
     text-align: center !important;
   }
-  @media only screen and (max-width: 1400px) {
-    #cardHolder {
-      display: flex;
-      width: 100%;
-      height: 450px !important;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-    }
-    #cards {
-      background-color: rgb(95, 0, 87) !important;
-      display: inline-block !important;
-      max-width: 16rem !important;
-      min-width: 10rem !important;
-      height: inherit !important;
-      margin: auto !important;
-      text-align: center !important;
-    }
-  }
-  @media only screen and (max-width: 1200px) {
-    #cardHolder {
-      display: flex;
-      width: 100%;
-      height: 500px !important;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-    }
-    #cards {
-      background-color: rgb(95, 0, 87) !important;
-      display: inline-block !important;
-      max-width: 16rem !important;
-      min-width: 10rem !important;
-      height: inherit !important;
-      margin: auto !important;
-      text-align: center !important;
-    }
-  }
-  @media only screen and (max-width: 600px) {
-    #cardHolder {
-      display: flex;
-      width: 100%;
-      height: 550px !important;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-    }
-    #cards {
-      background-color: rgb(95, 0, 87) !important;
-      display: inline-block !important;
-      max-width: 16rem !important;
-      height: inherit !important;
-      margin: auto !important;
-      text-align: center !important;
-    }
-  }
-  #cardHeader {
+  #intro h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: normal;
     text-align: center;
-    border-bottom: 2px solid white;
   }
-  #cardP {
-    font-size: 18px;
+  #intro p {
+    color:#b6b6b6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 0;
+    letter-spacing: normal;
     text-align: center;
+  }
+  #intro button {
+    background-color:rgb(95, 0, 87) !important;
+    border-color: rgb(95, 0, 87) !important;
+    border-radius: 20px 20px;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 40%;
+    width: 20%;
+  }
+
+  /* cross screen div containing everything relating to the supported audio platforms */
+  #supportedPlatforms {
+    background-color: rgb(54, 54, 54);
+    width: 75%; 
+    display: inline-block;
+    margin-left: 12.5%;
+    padding: 0%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    overflow-wrap: break-word;
+    border-radius: 15px 15px;
+  }
+  #supportedPlatforms h1 {
     width: 75%;
     margin: auto;
-    margin-top: 5%;
-  }
-  #cardButton {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #aboutDiv {
-    width: auto; 
-    height: inherit !important;
-    margin: auto; 
-    margin-left: auto;
-    margin-right: 2%;
-    margin-top: 2%;
-    float:left;
-  } 
-  #experienceDiv {
-    width: auto; 
-    height: inherit !important;
-    margin: auto; 
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 2%;
-    float:left;
-  }
-  #contactDiv {
-    width: auto; 
-    height: inherit !important;
-    margin: auto; 
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 2%;
-    float:left;
-  }
-  #projectsDiv {
-    width: auto; 
-    height: inherit !important;
-    margin: auto; 
-    margin-left: 2%;
-    margin-right: auto;
-    margin-top: 2%;
-    float:left;
-  }
-  #lastDiv {
-    width: 90%; 
-    margin: auto; 
-    margin-top: 0%;
-    margin-bottom: 5%;
-    border-radius: 20px 20px 20px 20px;
-    background-color: rgb(213, 213, 213);
-    overflow-wrap: break-word;
-  }
-  #lastDiv p {
-    text-align: center;
-    font-size: 18px;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 5%;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration-line: underline;
+    text-decoration-color: white;
+    letter-spacing: normal;
+    text-align: center;
+  }
+  #supportedPlatforms ul {
+    display: flex;
+    list-style-type: none;
+    width: 40%;
+    margin: auto;
+    margin-top: 2%;
+    margin-left: 30%;
+    align-items: stretch;
+    text-align: justify;
+    justify-content: space-between;
+    padding: 0px !important;
+  }
+  #supportedPlatforms ul li {
+    display: block;
+    flex: 0 1 auto;
+    margin: auto;
+  }
+  /* Div contating audio platform logos */
+  .logoDiv {
+    width: 100%;
+    margin: auto;
+  }
+  .logoDiv a {
+    font-size: 40px;
+  }
+  /* Audio Platform Logos */
+  #youtube {
+    width: 100%;
+    color: red;
+  }
+  #spotify {
+    width: 100%;
+    color: rgb(30,215,96);
+    margin-left: 10%;
+  }
+  #soundcloud {
+    width: 100%;
+    color: rgb(218,81,4);
+  }
+  #platformInfo {
+    width: 75%;
+    margin: 2% 12.5%;
+    background-color: rgb(95, 0, 87);
     padding: 2%;
+    border-radius: 20px 20px;
+  }
+  #platformInfo h5 {
+    color: white;
+    text-align: center;
+  }
+  .platformParagraph {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+  }
+  .platformParagraph a{
+    font-size: 16px;
+    color: white;
+    text-align: center;
+  }
+
+
+  /* /// all css for the tables holding commands /// */
+  #generalCommands {
+    width: 75%;
+    margin: 3% 12.5%;
+  }
+  .table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
+    border: 1px solid white !important;
+    background-color: rgba(95, 0, 87, 0.8) !important;
+  }
+  .tableHeader {
+    margin-top: 5% !important;
+    margin-bottom: 2% !important;
+  }
+  .col {
+    width: 25%;
+    margin: auto;
+  }
+  th {
+    text-align: center !important;
+    font-size: 18px !important;
+  }
+  td {
+    font-size: 16px !important;
+  }
+  .commandName {
+    text-align: center;
+  }
+  /* ////// */
+
+  /* /// all css for the tables holding commands /// */
+  .disclaimers {
+    background-color: rgb(95, 0, 87);
+    width: 75%; 
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 12.5%;
+    padding: 0%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    overflow-wrap: break-word;
+    border-radius: 15px 15px;
+  }
+  .disclaimers h1 {
+    width: 75%;
+    margin: auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration-line: underline;
+    text-decoration-color: white;
+    letter-spacing: normal;
+    text-align: center;
+  }
+  .disclaimers p {
+    width: 75%;
+    margin: 1% 12.5%;
+    color:#ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 0;
+    letter-spacing: normal;
+    text-align: center;
+  }
+  .warning {
+    margin-top: 3% !important;
+    color: red !important;
+    text-decoration: underline solid red !important;
+  }
+  /* ////// */
+
+
+
+  #devCredits {
+    width: 100%;
+    margin: 5% auto 0 auto;
+  }
+  .creditline{
+    width: 75%;
+    margin: auto;
+    color: white;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-bottom: 1%;
+  }
+  .creditline a {
+      color: white;
+      font-size: 16px;
+  }
+  .creditline a:hover {
+      color: rgb(95, 0, 87);
+  }
+/* Tablet resolution adjustments */
+  @media only screen and (max-width: 1400px) {
+    #intro h1 {
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: normal;
+      text-align: center;
+    }
+    #intro p {
+      color:#b6b6b6;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      font-weight: 0;
+      letter-spacing: normal;
+      text-align: center;
+    }
+    #intro button {
+      background-color:rgb(95, 0, 87) !important;
+      border-color: rgb(95, 0, 87) !important;
+      border-radius: 20px 20px;
+      color: white;
+      font-size: 24px;
+      text-align: center;
+      margin-top: 2%;
+      margin-bottom: 2%;
+      margin-left: 40%;
+      width: 20%;
+    }
+  }
+
+/* Larger phone resolution adjustments */
+  @media only screen and (max-width: 1200px) {
+    .logoDiv a {
+      font-size: 40px;
+    }
+    #intro h1 {
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: normal;
+      text-align: center;
+    }
+    #intro p {
+      color:#b6b6b6;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 0;
+      letter-spacing: normal;
+      text-align: center;
+    }
+    #intro button {
+      background-color:rgb(95, 0, 87) !important;
+      border-color: rgb(95, 0, 87) !important;
+      border-radius: 20px 20px;
+      color: white;
+      font-size: 18px;
+      text-align: center;
+      margin-top: 2%;
+      margin-bottom: 2%;
+      margin-left: 40%;
+      width: 20%;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .logoDiv a {
+      font-size: 40px;
+    }
+    #top {
+      width: 100%; 
+      margin: auto; 
+      margin-top: 5%;
+    } 
+    #top img {
+      text-align: center;
+      width: 10%;
+      margin: auto;
+      margin-left: 45%;
+    }  
+  }
+
+  @media only screen and (max-width: 800px) {
+    .logoDiv a {
+      font-size: 40px;
+    }
+    #top {
+      width: 100%; 
+      margin: auto; 
+      margin-top: 10%;
+    } 
+    #top img {
+      text-align: center;
+      width: 10%;
+      margin: auto;
+      margin-left: 45%;
+    }  
   }
 }
+
+
+
+
+
+
+
+
+
+          /* Phone View Styling */
 @media only screen and (max-width : 768px) {
   body {
-    background-color: rgb(250, 245, 241) !important;
+    background-color: rgb(8, 8, 8) !important;
+    padding-top: 5% !important;
   }
+
+  /* Navbar adjustments */
   nav {
     background-color: rgb(95, 0, 87) !important;
   }
   .navbar-nav {
-    float:none !important;
-    margin:0 auto !important;
     display: flex !important;
-    text-align: center !important;
+    float: none !important;
+    margin: 0 !important;
   }
   .navbar-nav > li {
     display: inline-block;
     float: none;
   }
-  nav ul li ul li {
-    background-color: rgb(255, 255, 255) !important;
-    
+  nav ul li a {
+    color: rgb(255, 255, 255) !important;
+  }
+  .custom-toggler.navbar-toggler {
+    border-color: rgb(95, 0, 87) !important;
+    background-color: white !important;
+  }
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url(
+    "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(95, 0, 87, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+  }
+  .dropdown-menu {
+    background-color: rgb(95, 0, 87) !important;
   }
   a {
     color: #00B7FF;
     font-size: 18px;
   }
   #top {
-    width: 80%; 
+    width: 100%; 
     margin: auto; 
-    margin-top: 5%;
-    border-bottom: 3px solid rgb(95, 0, 87);
+    margin-top: 10%;
   } 
-  #top h1 {
-    -webkit-text-fill-color: rgb(95, 0, 87);
+  #top img {
     text-align: center;
-    font-size: 22px;
+    width: 10%;
+    margin: auto;
+    margin-left: 45%;
+  }  
+  /* First div containing logo for beatbuddy */
+  @media only screen and (max-width: 600px) {
+    #top {
+      width: 100%; 
+      margin: auto; 
+      margin-top: 10%;
+    } 
+    #top img {
+      text-align: center;
+      width: 25%;
+      margin: auto;
+      margin-left: 37.5%;
+    }
+    #intro button {
+      width: 40% !important;
+      margin: auto !important;
+      margin-top: 5% !important;
+      margin-left: 30% !important;
+      background-color:rgb(95, 0, 87) !important;
+      border-color: rgb(95, 0, 87) !important;
+      border-radius: 10px 10px;
+      color: white;
+      font-size: 16px;
+      text-align: center;
+      margin-top: 2%;
+      margin-bottom: 2%;
+      margin-left: 40%;
+      width: 20%;
+    }
+    #commandsIntro {
+      width: 75%;
+      margin: 0 12.5%;
+      padding: 1%;
+      background-color: rgb(95, 0, 87);
+      border-radius: 15px 15px;
+    }
+    #commandsIntro h1{
+      font-size: 16px !important;
+    }
+    .paraDiv {
+      width: 100% !important;
+      font-size: 12px !important;
+      margin: 2% 0 !important;
+    }
+    .paraDiv p{
+      width: 100% !important;
+      margin: 0 !important;
+    }
+    #commandsIntro p {
+      color: white !important;
+      font-family: Arial, Helvetica, sans-serif !important;
+      font-size: 16px !important;
+      font-weight: 400 !important;
+      text-align: center !important;
+    }
   }
+  /* Second div containing information about beatbuddy */
   #intro {
-    width: 90%; 
+    width: 100%; 
     margin: auto; 
     margin-top: 2%;
-    margin-bottom: 7%;
-    border-radius: 20px 20px 20px 20px;
-    background-color: rgb(213, 213, 213);
-    padding: 5%;
+    padding: 0%;
     padding-top: 2%;
     padding-bottom: 2%;
     overflow-wrap: break-word;
   }
-  #intro p {
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+  #commandsIntro {
+    width: 75%;
+    margin: 0 12.5%;
+    padding: 5%;
+    background-color: rgb(95, 0, 87);
+    border-radius: 15px 15px;
   }
-  #cardHolder {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+  #commandsIntro h1{
+    font-size: 14px !important;
+    width: 100% !important;
   }
-  #cards {
-    background-color: rgb(95, 0, 87) !important;
-    border-radius: 20px 20px 20px 20px;
-    height: 50% !important;
-    margin: auto !important;
+  #commandsIntro p {
+    font-size: 12px !important;
+    width: 100% !important;
+  }
+  .paraDiv {
+    width: 100% !important;
+    font-size: 16px !important;
+    margin: 2% 0% !important;
+  }
+  .paraDiv p{
+    width: 100% !important;
+    margin: 0 !important;
+    color: white !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
     text-align: center !important;
   }
-  #cardHeader {
+  #intro h1 {
+    width: 75% !important;
+    margin: auto !important;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: normal;
     text-align: center;
-    border-bottom: 2px solid white;
   }
-  #cardP {
+  #intro p {
+    width: 50%;
+    margin: auto !important;
+    margin-top: 5% !important;
+    margin-bottom: 5% !important;
+    color:#b6b6b6;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
+    font-weight: 0;
+    letter-spacing: normal;
     text-align: center;
+  }
+  #intro button {
+    margin: auto !important;
+    margin-top: 5% !important;
+    margin-left: 30% !important;
+    background-color:rgb(95, 0, 87) !important;
+    border-color: rgb(95, 0, 87) !important;
+    border-radius: 20px 20px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 40%;
+    width: 40%;
+  }
+  /* cross screen div containing everything relating to the supported audio platforms */
+  #supportedPlatforms {
+    background-color: rgb(54, 54, 54);
+    width: 75%; 
+    display: inline-block;
+    margin: 0 12.5%; 
+    padding: 0%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    overflow-wrap: break-word;
+    border-radius: 15px 15px;
+  }
+  #supportedPlatforms h1 {
     width: 75%;
     margin: auto;
     margin-top: 2%;
-    margin-bottom: 3%;
-  }
-  #cardButton {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 14px;
-  }
-  #aboutDiv {
-    width: auto; 
-    margin: auto; 
-    margin-top: 5%;
-  } 
-  #experienceDiv {
-    width: auto; 
-    margin: auto; 
-    margin-top: 5%;
-  }
-  #contactDiv {
-    width: auto; 
-    margin: auto; 
-    margin-top: 5%;
-  }
-  #projectsDiv {
-    width: auto; 
-    margin: auto; 
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-  #lastDiv {
-    width: 90%; 
-    margin: auto; 
-    margin-top: 0%;
-    margin-bottom: 5%;
-    border-radius: 20px 20px 20px 20px;
-    background-color: rgb(213, 213, 213);
-    overflow-wrap: break-word;
-  }
-  #lastDiv p {
-    text-align: center;
-    font-size: 12px;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration-line: underline;
+    text-decoration-color: white;
+    letter-spacing: normal;
+    text-align: center;
+  }
+  #supportedPlatforms ul {
+    display: flex;
+    list-style-type: none;
+    width: 50%;
+    margin: auto;
+    margin-top: 2%;
+    margin-left: 25%;
+    align-items: stretch;
+    text-align: justify;
+    justify-content: space-between;
+    padding: 0px !important;
+  }
+  #supportedPlatforms ul li {
+    display: block;
+    flex: 0 1 auto;
+    margin: auto;
+  }
+  /* Div contating audio platform logos */
+  .logoDiv {
+    width: 100%;
+    margin: auto;
+  }
+  .logoDiv a {
+    font-size: 40px;
+  }
+  /* Audio Platform Logos */
+  #youtube {
+    width: 100%;
+    margin: auto;
+    color: red;
+  }
+  #spotify {
+    width: 100%;
+    color: rgb(30,215,96);
+    margin: auto;
+  }
+  #soundcloud {
+    width: 100%;
+    color: rgb(218,81,4);
+    margin: auto;
+  }
+  #platformInfo {
+    width: 75%;
+    margin: 2% 12.5%;
+    background-color: rgb(95, 0, 87);
     padding: 2%;
-    margin-top: 7%;
+    border-radius: 20px 20px;
+  }
+  #platformInfo h5 {
+    margin-top: 2%;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+  }
+  .platformParagraph {
+    font-size: 12px;
+    color: white;
+    text-align: center;
+  }
+  .platformParagraph a{
+    font-size: 12px;
+    color: white;
+    text-align: center;
+  }
+
+  /* /// all css for the tables holding commands /// */
+  #generalCommands {
+    width: 75%;
+    margin: 3% 12.5%;
+  }
+  .table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
+    border: 1px solid white !important;
+    background-color: rgba(95, 0, 87, 0.8) !important;
+  }
+  .tableHeader {
+    margin-top: 5% !important;
+    margin-bottom: 2% !important;
+  }
+  .col {
+    width: 40%;
+    margin: auto;
+  }
+  th {
+    text-align: center !important;
+    font-size: 12px !important;
+  }
+  td {
+    font-size: 10px !important;
+  }
+  .commandName {
+    text-align: center;
+  }
+  /* ////// */
+
+  /* /// all css for the tables holding commands /// */
+  .disclaimers {
+    background-color: rgb(95, 0, 87);
+    width: 75%; 
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 12.5%;
+    padding: 0%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    overflow-wrap: break-word;
+    border-radius: 15px 15px;
+  }
+  .disclaimers h1 {
+    width: 75%;
+    margin: auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration-line: underline;
+    text-decoration-color: white;
+    letter-spacing: normal;
+    text-align: center;
+  }
+  .disclaimers p {
+    width: 75%;
+    margin: 1% 12.5%;
+    color:#ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 0;
+    letter-spacing: normal;
+    text-align: center;
+  }
+  .warning {
+    margin-top: 3% !important;
+    color: red !important;
+    text-decoration: underline solid red !important;
+  }
+  /* ////// */
+
+  
+  #devCredits {
+    width: 100%;
+    margin: 5% auto 0 auto;
+  }
+  .creditline{
+    width: 100%;
+    margin: auto;
+    color: white;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-bottom: 3%;
+  }
+  .creditline a {
+      color: white;
+      font-size: 12px;
+  }
+  .creditline a:hover {
+      color: rgb(95, 0, 87);
   }
 }
 

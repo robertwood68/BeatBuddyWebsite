@@ -25,10 +25,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 
 // imports for links such as /projects.html and /indexStyle.css
-app.use(express.static('public/images'));
-app.use(express.static('public/pages'));
-app.use(express.static('public/javascripts'));
-app.use(express.static('public/stylesheets'));
+app.use(express.static(path.join(__dirname, 'public/images')));
+app.use(express.static(path.join(__dirname, 'public/pages')));
+app.use(express.static(path.join(__dirname, 'public/javascripts')));
+app.use(express.static(path.join(__dirname, 'public/stylesheets')));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -1,11 +1,15 @@
 #!/usr/bin/env node
 
+/* This application does not need to create an https server since it is using reverse-proxy through nginx.conf combined with SSL certificates */
+
 /**
  * Module dependencies.
  */
 const app = require('../app');
 const debug = require('debug')('beatbuddywebsite:server');
 const http = require('http');
+const https = require('https');
+const fs = require('fs');
 
 /**
  * Get port from environment and store in Express.
@@ -16,7 +20,7 @@ app.set('port', port);
 /**
  * Create HTTP server.
  */
-const server = http.createServer(options, app);
+const server = http.createServer(app);
 
 /**
  * Listen on provided port, on all network interfaces.

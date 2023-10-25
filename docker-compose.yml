@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  my-node-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: robwoodd/beatbuddysite
+    ports:
+      - "8000:8000"

@@ -7,4 +7,4 @@ services:
       dockerfile: Dockerfile
     image: robwoodd/beatbuddysite
     ports:
-      - "8000:8000"
+      - "8812:8000"
